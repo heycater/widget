@@ -12,9 +12,11 @@ const positionClass = (position) => {
 
 function App({ domElement }) {
   const catererSlug = domElement.getAttribute("data-caterer");
+  const city = domElement.getAttribute("data-city");
   const position = positionClass(domElement.getAttribute("data-placement"));
+  
   return (
-    <div onClick={() => window.location.href=`https://www.heycater.com/de/catering/berlin/${catererSlug}`} className={`shop__button__heycater_app ${position}`}>
+    <div onClick={() => window.location.href=`https://www.heycater.com/de/catering/${city}/${catererSlug}?utm_source=online-shop-widget`} className={`shop__button__heycater_app ${position}`}>
       <div className="heycater__widget_container">
         <button className="heycater__widget_cta">
           <div className='heycater__widget_cart'>
