@@ -16,23 +16,23 @@ function App({ domElement }) {
   const position = positionClass(domElement.getAttribute("data-placement"));
 
   return (
-    <div
-      onClick={() =>
-        (window.location.href = `https://www.heycater.com/de/catering/${city}/${catererSlug}?utm_source=online-shop-widget`)
-      }
-      className={`shop__button__heycater_app ${position}`}
+    <a
+      href={`https://www.heycater.com/de/catering/${city}/${catererSlug}?utm_source=online-shop-widget`}
+      target="top"
     >
-      <div className="heycater__widget_container">
-        <button className="heycater__widget_cta">
-          <div className="heycater__widget_cart">
-            <Cart />
-          </div>
-          <div className="heycater__widget_button-text">
-            <Logo /> Online buchen
-          </div>
-        </button>
+      <div className={`shop__button__heycater_app ${position}`}>
+        <div className="heycater__widget_container">
+          <button className="heycater__widget_cta">
+            <div className="heycater__widget_cart">
+              <Cart />
+            </div>
+            <div className="heycater__widget_button-text">
+              <Logo /> Online buchen
+            </div>
+          </button>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
 
