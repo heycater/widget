@@ -21,15 +21,13 @@ function App({ domElement }) {
       target="_top"
       className={`shop__button__heycater_app ${position}`}
     >
-      <div className="heycater__widget_container">
-        <button className="heycater__widget_cta">
-          <div className="heycater__widget_cart">
-            <Cart />
-          </div>
-          <div className="heycater__widget_button-text">
-            <Logo /> Online buchen
-          </div>
-        </button>
+      <div className="heycater__widget_cta">
+        <div className="heycater__widget_cart">
+          <Cart />
+        </div>
+        <div className="heycater__widget_button-text">
+          <Logo /> Online buchen
+        </div>
       </div>
     </a>
   );
