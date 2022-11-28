@@ -18,7 +18,7 @@ function App({ domElement }) {
   return (
     <a
       href={`https://www.heycater.com/de/catering/${city}/${catererSlug}?utm_source=online-shop-widget`}
-      target="top"
+      target="_top"
     >
       <div className={`shop__button__heycater_app ${position}`}>
         <div className="heycater__widget_container">
