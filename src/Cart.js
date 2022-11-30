@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 const Cart = (props) => (
   <svg
@@ -16,6 +16,6 @@ const Cart = (props) => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
-export default Cart
+export default Cart;
